@@ -6,6 +6,9 @@ the app server in serving the correct content. It also speeds up the check by cr
 
 ![Example](http://springest-monosnap.s3-website-eu-west-1.amazonaws.com/tn2rlqi0ibwfqgr00ahg.png)
 
+## Installation
+> gem install apphealth
+
 ## Usage
 AppHealth checks for a `.apphealth.yml` in either the directory your in or in your home directory. Create this file on a per project basis or just put it in your home dir as a default.
 
@@ -23,7 +26,7 @@ servers:
 
 After creating your config file you can check the app server by running the following command:
 
-``apphealth [url]`
+> apphealth [url]
 
 * `url` is an optional url to check, if none is given it will check the `default_url` from the config.
 
