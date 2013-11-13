@@ -1,5 +1,5 @@
 # AppHealth
-[ Build status ]
+[![Build Status](https://travis-ci.org/djfpaagman/apphealth.png?branch=master)](https://travis-ci.org/djfpaagman/apphealth)
 
 AppHealth checks the response for a specific URL on each app server. It does so by overwriting the Host header to the original hostname to trick
 the app server in serving the correct content. It also speeds up the check by creating a seperate thread for each request and outputs to stdout.
