@@ -4,6 +4,8 @@
 AppHealth checks the response for a specific URL on each app server. It does so by overwriting the Host header to the original hostname to trick
 the app server in serving the correct content. It also speeds up the check by creating a seperate thread for each request and outputs to stdout.
 
+![Example](http://springest-monosnap.s3-website-eu-west-1.amazonaws.com/tn2rlqi0ibwfqgr00ahg.png)
+
 ## Usage
 AppHealth checks for a `.apphealth.yml` in either the directory your in or in your home directory. Create this file on a per project basis or just put it in your home dir as a default.
 
@@ -24,6 +26,9 @@ After creating your config file you can check the app server by running the foll
 ``apphealth [url]`
 
 * `url` is an optional url to check, if none is given it will check the `default_url` from the config.
+
+## Gotchas
+For this script to work your app servers have to be directly reachable over http(s). I recommend using a VPN connection and only allowing direct access through the VPN. This way you won't expose your app servers to the whole internet directly.
 
 ## Contributing
 
