@@ -1,0 +1,4 @@
+default_url: http://domain.net/foo123
+servers:
+  - server01.domain.net
+  - server02.domain.net
