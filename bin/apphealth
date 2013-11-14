@@ -8,7 +8,7 @@ check = AppHealth::Checker.new(ARGV[0])
 # each number maps to a class of http responses. For example 2 for 2xx responses.
 color_map = {
   '2' => 'green',
-  '3' => 'orange',
+  '3' => 'yellow',
   '4' => 'red',
   '5' => 'red',
 }
