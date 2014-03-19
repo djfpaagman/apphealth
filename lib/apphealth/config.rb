@@ -31,7 +31,7 @@ module AppHealth
     end
 
     def self.current_dir_file
-      File.open(File.join(__dir__, FILE_NAME), 'r')
+      File.open(File.join(Dir.pwd, FILE_NAME), 'r')
     rescue Errno::ENOENT
       nil
     end

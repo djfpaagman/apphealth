@@ -22,6 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 2.6"
   spec.add_development_dependency "fakeweb", ["~> 1.3"]
   spec.add_development_dependency "fakefs"
-  spec.add_development_dependency "debugger"
   spec.add_dependency 'colored'
 end
